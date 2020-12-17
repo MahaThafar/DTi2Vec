@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ### Files Description:
 #### *There are Three folders:*
 
-  **1.Input folder:** 
+  **1.(Input) folder:** 
   that includes four folder for 5 datasets include: 
    - Nuclear Receptor dataset (nr),
    - G-protein-coupled receptor (gpcr),
@@ -49,11 +49,11 @@ pip install -r requirements.txt
    - FDA_DrugBank (DrugBank)
      which each one of them has all required data of drug-target interactions (in Adjacency matrix and edgelist format) and drug-drug similarity and target-target similarity in (square matrix format)
   
-  **2.Embedding (EMBED) folder:**
-  that has also five folders coressponding for four datasets,
-     each folder contains the generated node2vec embeddings files for each fold of training data (coressponding to the same seed of CV in the main code)
+  **2.(EMBED) folder:**
+  that has also five folders coressponding for five datasets,
+     each folder contains the generated node2vec Embedding file for each fold of training data (coressponding to the same seed of CV in the main node2vec code)
      
-  **3.Novel_DTIs folder:**
+  **3.(Novel_DTIs) folder:**
   that has also four folders coressponding for four datasets, 
      to write the novel DTIs (you should create directory for each dataset)
   
