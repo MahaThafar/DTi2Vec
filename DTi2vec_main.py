@@ -26,8 +26,8 @@ def main():
 	args = parse_args()
 
 	data='nr'
-	classifier = 'xgbc'
-	func = 'Concat'
+	classifier = 'ab'
+	func = 'WL1'
 
 	## get the start time to report the running time
 	t1 = time.time()
