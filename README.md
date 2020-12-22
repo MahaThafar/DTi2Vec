@@ -65,16 +65,35 @@ pip install -r requirements.txt
 
 
 - **main function**
-> - DTIs_Main.py
+> - DTi2Vec_main.py
 
 
 ---
 ## Installing:
 
-To get the development environment runining, the code get one parameter from the user which is the dataset name (the defual dataset is nr)
-run:
+To get the development environment runining, the code get 3 parameters from the user which are:
+- **the dataset name** data:(nr, gpcr, ic, e, DrugBank)
+- **the boosting classifier** classifier: AdaBoost(ab), XGBoost (xgbc)
+- **the fusion function** func: (Concat, Hadmard, AVG, WL1, WL2)
+- (the defual values are:  dataset:nr , classifier:ab, fusion function: )
 
+- to run the code (to obtain best results for each dataset run the following:
 
+```
+python DTi2Vec_main.py --data nr --classifier ab --func WL1
+```
+```
+python DTi2Vec_main.py --data gpcr --classifier xgbc --func Hadamard
+```
+```
+python DTi2Vec_main.py --data ic --classifier xgbc --func Concat
+```
+```
+python DTi2Vec_main.py --data e --classifier xgbc --func Concat
+```
+```
+python DTi2Vec_main.py --data DrugBank --classifier xgbc --func Hadamard
+```
 
 ------------------
 ### For citation:
