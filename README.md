@@ -56,14 +56,10 @@ pip install -r requirements.txt
      ```
      pip install node2vec
      ```
-     
-  **3.(Novel_DTIs) folder:**
-  that has also four folders coressponding for four datasets, 
-     to write the novel DTIs (you should create directory for each dataset)
   
 ---
 #### *There are 2 files of the implementation:*
-(Four main functions, one main for each dataset, and the other functions are same for all datasets which are imported in each main function)
+
 
 - **load_datasets.py** --> to read the input data for each dataset sperately
 
