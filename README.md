@@ -52,6 +52,10 @@ pip install -r requirements.txt
   **2.(EMBED) folder:**
   that has also five folders coressponding for five datasets,
      each folder contains the generated node2vec Embedding file for each fold of training data (coressponding to the same seed of CV in the main node2vec code)
+     - to access the main code of node2vec: https://github.com/aditya-grover/node2vec, or you can install node2vec library using 
+     ```
+     pip install node2vec
+     ```
      
   **3.(Novel_DTIs) folder:**
   that has also four folders coressponding for four datasets, 
