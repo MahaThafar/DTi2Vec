@@ -38,7 +38,7 @@ pip install -r requirements.txt
 ----
 
 ### Files Description:
-#### *There are Three folders:*
+#### *The important folders are (to run the code):*
 
   **1.(Input) folder:** 
   that includes four folder for 5 datasets include: 
