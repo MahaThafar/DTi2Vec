@@ -1,4 +1,4 @@
-# DTi2Vec: Drug-Target interaction prediction using network embedding and esemble learning
+# DTi2Vec: Drug-Target interaction prediction using network embedding and ensemble learning
 
 
 Submitted: 16 December 2020                                      
