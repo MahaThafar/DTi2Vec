@@ -48,7 +48,12 @@ def main():
 	if(args.classifier=='ab'):
 		clf = AdaBoostClassifier(DecisionTreeClassifier(criterion='gini', splitter='best', max_depth=6, min_samples_split=2,
 	                    min_samples_leaf=1, max_features=None, random_state=1,max_leaf_nodes=None ), algorithm="SAMME", n_estimators=100,random_state=32)
-	
+	# for DrugBank dataset
+# 	if(args.classifier=='ab'):
+# 	ab = AdaBoostClassifier(DecisionTreeClassifier(criterion='gini', splitter='best', max_depth=20, min_samples_split=2,
+#                         min_samples_leaf=1, max_features=None, random_state=10,max_leaf_nodes=None, 
+#                         class_weight= 'balanced' ), algorithm="SAMME", n_estimators=300,random_state=10)
+
 	# 3- Xtreme Gradian Boosting
 	if(args.classifier=='xgbc'):
 		clf = XGBClassifier(base_score=0.5, booster='gbtree',eval_metric ='error',objective='binary:logistic',
