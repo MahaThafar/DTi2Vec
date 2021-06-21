@@ -101,18 +101,13 @@ python DTi2Vec_main.py --data DrugBank --classifier xgbc --func Hadamard
 * The classifier is XGBoost for all dataset
 * The Embeddings are generated using node2vec for new drugs CV and can be found in:'EMBED/newDrug_EMBED'
 * and then read the generated embeddings in this code.
+* The best obtianed results for all datasets using WL1 except for DB using Hadmard
+
+**Examples to run newDrug setting:
 ```
 python DTi2vec_newDrug_seting_generatedEMBED.py --data nr  --func WL1
 ```
-```
-python DTi2vec_newDrug_seting_generatedEMBED.py --data gpcr  --func WL1
-```
-```
-python DTi2vec_newDrug_seting_generatedEMBED.py --data ic  --func WL1
-```
-```
-python DTi2vec_newDrug_seting_generatedEMBED.py --data e  --func WL1
-```
+
 ```
 python DTi2vec_newDrug_seting_generatedEMBED.py --data DrugBank --func Hadamard
 ```
