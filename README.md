@@ -58,14 +58,15 @@ pip install -r requirements.txt
      ```
   
 ---
-#### *There are 2 files of the implementation:*
+#### *There are 3 files of the implementation:*
 
 
 - **load_datasets.py** --> to read the input data for each dataset sperately
 
 
-- **main function**
-> - DTi2Vec_main.py
+- **tow main function**
+1- **Random CV Setting** --> - DTi2Vec_main.py
+2- **New Drug Setting** -->  - DTi2vec_newDrug_seting_generatedEMBED.py
 
 
 ---
@@ -75,9 +76,9 @@ To get the development environment runining, the code get 3 parameters from the 
 - **the dataset name** data:(nr, gpcr, ic, e, DrugBank)
 - **the boosting classifier** classifier: AdaBoost(ab), XGBoost (xgbc)
 - **the fusion function** func: (Concat, Hadmard, AVG, WL1, WL2)
-- (the defual values are:  dataset:nr , classifier:ab, fusion function: )
+- (the defual values are:  dataset:nr , classifier:ab, fusion function:Hadmard )
 
-- to run the code (to obtain best results for each dataset run the following:
+- to run the code for random CV settings (to obtain best results for each dataset run the following:
 
 ```
 python DTi2Vec_main.py --data nr --classifier ab --func WL1
@@ -95,6 +96,26 @@ python DTi2Vec_main.py --data e --classifier xgbc --func Concat
 python DTi2Vec_main.py --data DrugBank --classifier xgbc --func Hadamard
 ```
 
+--
+## For new drug setting: (It takes 2 args: dataset name and the fusion function)
+* The classifier is XGBoost for all dataset
+* The Embeddings are generated using node2vec for new drugs CV and can be found in:'EMBED/newDrug_EMBED'
+* and then read the generated embeddings in this code.
+```
+python DTi2vec_newDrug_seting_generatedEMBED.py --data nr  --func WL1
+```
+```
+python DTi2vec_newDrug_seting_generatedEMBED.py --data gpcr  --func WL1
+```
+```
+python DTi2vec_newDrug_seting_generatedEMBED.py --data ic  --func WL1
+```
+```
+python DTi2vec_newDrug_seting_generatedEMBED.py --data e  --func WL1
+```
+```
+python DTi2vec_newDrug_seting_generatedEMBED.py --data DrugBank --func Hadamard
+```
 ------------------
 ### For citation:
 ---
