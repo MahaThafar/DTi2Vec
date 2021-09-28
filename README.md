@@ -23,6 +23,9 @@ Computer, Electrical and Mathematical Sciences and Engineering Division (CEMSE),
 
 ## Getting Started
 
+### DTi2Vec Workflow
+![image](https://github.com/MahaThafar/DTi2Vec/blob/main/Figure-2.png)
+
 ### Prerequisites:
 
 There are several required Python packages to run the code:
