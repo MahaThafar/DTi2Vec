@@ -1,10 +1,11 @@
 # DTi2Vec: Drug-Target interaction prediction using network embedding and ensemble learning
 
 
-Submitted: 16 December 2020                                      
+Submitted: 16 December 2020 
+Accepted: 05 September 2021
+Published: 22 September 2021
 
-
-
+Link: https://jcheminf.biomedcentral.com/articles/10.1186/s13321-021-00552-w
 ----
 This code is implemented using Python 3.7
 
@@ -113,6 +114,5 @@ python DTi2vec_newDrug_seting_generatedEMBED.py --data DrugBank --func Hadamard
 ```
 ------------------
 ### For citation:
----
-
+Thafar, Maha A., Rawan S. Olayan, Somayah Albaradei, Vladimir B. Bajic, Takashi Gojobori, Magbubah Essack, and Xin Gao. "DTi2Vec: Drug–target interaction prediction using network embedding and ensemble learning." Journal of Cheminformatics 13, no. 1 (2021): 1-18.
 
