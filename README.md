@@ -115,6 +115,6 @@ python DTi2vec_newDrug_seting_generatedEMBED.py --data DrugBank --func Hadamard
 ```
 ------------------
 ### For citation:
-```
+----
 Thafar, Maha A., Rawan S. Olayan, Somayah Albaradei, Vladimir B. Bajic, Takashi Gojobori, Magbubah Essack, and Xin Gao. "DTi2Vec: Drug–target interaction prediction using network embedding and ensemble learning." Journal of Cheminformatics 13, no. 1 (2021): 1-18.
-```
+----
